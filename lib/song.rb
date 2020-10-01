@@ -24,4 +24,8 @@ class Song
     new_hash = {}
     @@genres.each do |element|
       new_hash[element] ||= 1 
-      new_hash[element] += 1 
+      new_hash[element] += 1
+    end
+    new_hash 
+  end
+  def 
