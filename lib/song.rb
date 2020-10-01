@@ -28,7 +28,9 @@ class Song
     else 
       new_hash[element] = 1 
     end
-    new_hash 
+  end
+  
+  	new_hash 
   end
   
 end
