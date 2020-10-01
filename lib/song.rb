@@ -21,15 +21,17 @@ class Song
     @@artists.uniq 
   end
   def self.genre_count 
-    new_hash = {}
-    @@genres.each do |element|
-      new_hash[element] ||= 1 
-      if new_hash[element] != 1 
-        new_hash[element] += 1
-      end
+  new_hash = {}
+  @@genres.each do |element|
+    if new_hash[element]
+      new_hash[element] += 1 
+    else 
+      new_hash[element] = 1 
     end
     new_hash 
   end
+  
+end
   def self.artist_count
     artist_count = {}
     @@artists.each do |artist|
